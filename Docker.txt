@@ -1,0 +1,47 @@
+ *#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#  CORPORATION  #*#*#*#*#**#*#*#*#*#*#**#*#*#*#*#*#*#**#*#*#*#*
+
+
+
+***********STEPS FOR SETTING DOCKER ***************
+
+1.$ sudo apt-get update
+2.$ sudo apt-get remove docker docker-engine docker.io // Additional step
+3.$ sudo apt install docker.io   
+4.$ sudo systemctl start docker
+5.$ sudo systemctl enable docker
+6.$ docker --version
+7.$ sudo docker images
+8.$ sudo docker ps
+9.$ sudo docker pull hello-world
+10.$ sudo docker images
+11.$ sudo docker run hello-world
+12.$ sudo docker container ls --all
+13.$ sudo docker container --help
+
+
+
+*******FOR DOTNET program**********
+
+1.$ git clone https://github.com/RaviTambade/containerapps.git
+2.$ cd containerapps/nodeapp
+3.$ sudo docker build -t nodeapp .   //This fucking dot is important
+4.$ sudo docker run -p 8081:8081 nodeapp
+5.ACCESS WITH PORT NUMBER 8081
+
+******FOR ANGULAR program**********
+
+1.$ sudo docker pull rahulsn/ng
+2.$ sudo docker run --name rnserver -d -p 8888:80 rahulsn/ng
+3.ACCESS WITH PORT NUMBER 8888
+
+******FOR NGINX program***********
+
+1.$ sudo docker pull nginx
+2.$ sudo docker run --name webserver -d -p 8080:80 nginx:latest
+3.ACCESS WITH PORT NUMBER 8080
+
+
+                                                                            
+
+
+                           
